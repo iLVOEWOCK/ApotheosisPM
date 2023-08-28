@@ -1,0 +1,17 @@
+# Defines the affix rarities from highest to lowest
+rarities:
+  - "Mythical"
+  - "Legendary"
+  - "Epic"
+  - "Rare"
+  - "Uncommon"
+  - "Common"
+  - "Poor"
+
+affix_effects:
+  mythical:
+   types:
+     - damage:
+        amount: 0.1
+     - less_damage: # chanage name to something less repulsive
+        amount: 0.1
