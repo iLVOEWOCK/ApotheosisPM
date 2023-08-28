@@ -1,0 +1,6 @@
+name: Apotheosis
+main: wockkinmycup\Apotheosis\Loader
+api: 5.0.0
+version: 1.0.0
+author: wockkinmycup
+description: "A plugin designed to be similar to the Apotheosis mod from CurseForge (unofficial)"
