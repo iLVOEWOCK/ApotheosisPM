@@ -28,7 +28,8 @@ class Loader extends PluginBase {
     public function registerListeners() {
         $pMngr = $this->getServer()->getPluginManager();
 
-        if (Utils::getConfig()->getNested("modules.adventure" === true) {
+        // Adventure Module
+        if (Utils::getConfig()->getNested("modules.adventure") === true) {
             $pMngr->registerEvents(new AffixListener(), $this);
             $this->getLogger()->notice("Adventure Module Enabled!");
         }
