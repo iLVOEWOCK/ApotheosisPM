@@ -27,10 +27,13 @@ class Loader extends PluginBase {
     public function registerListeners() {
         $pMngr = $this->getServer()->getPluginManager();
 
-        $pMngr->registerEvents(new AffixListener(), $this);
+        if (Utils::getConfig()->getNested("modules.adventure" === true) {
+            $pMngr->registerEvents(new AffixListener(), $this);
+            $this->getLogger()->notice("Adventure Module Enabled!");
+        }
     }
 
     public static function getInstance() : Loader {
-        return self::getInstance();
+        return self::$instance;
     }
 }
