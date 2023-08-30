@@ -4,6 +4,7 @@ namespace wockkinmycup\Apotheosis;
 
 use pocketmine\plugin\PluginBase;
 use wockkinmycup\Apotheosis\Modules\Adventure\Listeners\AffixListener;
+use wockkinmycup\Apotheosis\Utils\Utils;
 
 class Loader extends PluginBase {
 
